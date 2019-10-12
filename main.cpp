@@ -52,5 +52,6 @@ int main() {
     cout << "----Complex Number Class----" << endl;
     ComplexNumberClass c1(2,3);
     ComplexNumberClass c2 = c1;
+    cout << c1 << endl;
     return 0;
 }

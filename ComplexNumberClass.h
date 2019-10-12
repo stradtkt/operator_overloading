@@ -17,7 +17,10 @@ public:
     ComplexNumberClass(double real, double imaginary);
     ComplexNumberClass(const ComplexNumberClass &other);
     const ComplexNumberClass &operator=(const ComplexNumberClass &other);
+    double getReal() const {return real;}
+    double getImaginary() const {return imaginary;}
 };
 
+ostream &operator<<(ostream &out, const ComplexNumberClass &c);
 
 #endif //OPERATOR_OVERLOADING_COMPLEXNUMBERCLASS_H

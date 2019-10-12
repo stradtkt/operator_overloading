@@ -25,3 +25,8 @@ const ComplexNumberClass &ComplexNumberClass::operator=(const ComplexNumberClass
     imaginary = other.imaginary;
     return *this;
 }
+
+ostream &operator<<(ostream &out, const ComplexNumberClass &c) {
+    out << "(" << c.getReal() << "," << c.getImaginary() << ")";
+    return out;
+}
